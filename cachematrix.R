@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
                 return(m)
         }
         data <- x$get()
-        m <- solve(data, ...)
+        m <- solve(matrix, ...)
         x$setsolve(m)
         m
 }
